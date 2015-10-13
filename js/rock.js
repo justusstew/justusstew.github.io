@@ -46,18 +46,21 @@ function evaluate_choices(choice1,choice2){
   }
 }
 
-$('#rock').on('click',function(){
+$('#rock').on('click',function(e){
+  e.preventDefault();
   user_choice = 'rock';
   justus_choice = options[Math.floor(Math.random() * 3) + 1].toString();
 
   evaluate_choices(user_choice,justus_choice);
 });
-$('#paper').on('click',function(){
+$('#paper').on('click',function(e){
+  e.preventDefault();
   user_choice = 'paper';
   justus_choice = options[Math.floor(Math.random() * 3) + 1].toString();
   evaluate_choices(user_choice,justus_choice);
 });
-$('#scissors').on('click',function(){
+$('#scissors').on('click',function(e){
+  e.preventDefault();
   user_choice = 'scissors';
   justus_choice = options[Math.floor(Math.random() * 3) + 1].toString();
   evaluate_choices(user_choice,justus_choice);
