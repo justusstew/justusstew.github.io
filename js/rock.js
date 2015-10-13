@@ -4,8 +4,8 @@ var justus_choice = '';
 var user_score = 0;
 var justus_score = 0;
 
-$('#user_score').append(user_score);
-$('#justus_score').append(justus_score);
+$('#user_score').append(user_score.toString());
+$('#justus_score').append(justus_score.toString());
 
 function evaluate_choices(choice1,choice2){
   if(choice1 == choice2){
