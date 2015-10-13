@@ -16,74 +16,80 @@ function evaluate_choices(choice1,choice2){
     $('#justus_choice').append(justus_choice);
     $('#user_choice').append(user_choice);
     setTimeout(function(){ $('#game_message').empty();$('#justus_choice').empty();
-    $('#user_choice').empty(); }, 1500);
+    $('#user_choice').empty(); }, 2500);
   }
   else if(choice1 == 'rock' && choice2 == 'paper'){
     $('#game_message').empty();
     $('#game_message').append('Justus Wins!');
-    justus_score = parseInt($('#justus_score').val()) + 1;
-    $('#justus_score').val(justus_score);
+    justus_score = justus_score + 1;
+    $('#justus_score').empty();
+    $('#justus_score').append();
     $('#justus_choice').empty();
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
     $('#user_choice').append(user_choice);
     setTimeout(function(){ $('#game_message').empty();$('#justus_choice').empty();
-    $('#user_choice').empty(); }, 1500);
+    $('#user_choice').empty(); }, 2500);
   }else if(choice1 == 'paper' && choice2 == 'scissors'){
     $('#game_message').empty();
     $('#game_message').append('Justus Wins!');
-    justus_score = parseInt($('#justus_score').val()) + 1;
-    $('#justus_score').val(justus_score);
+    justus_score = justus_score + 1;
+    $('#justus_score').empty();
+    $('#justus_score').append();
     $('#justus_choice').empty();
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
     $('#user_choice').append(user_choice);
     setTimeout(function(){ $('#game_message').empty();$('#justus_choice').empty();
-    $('#user_choice').empty(); }, 1500);
+    $('#user_choice').empty(); }, 2500);
   }else if(choice1 == 'scissors' && choice2 == 'rock'){
     $('#game_message').empty();
     $('#game_message').append('Justus Wins!');
-    justus_score = parseInt($('#justus_score').val()) + 1;
-    $('#justus_score').val(justus_score);
+    justus_score = justus_score + 1;
+    $('#justus_score').empty();
+    $('#justus_score').append();
     $('#justus_choice').empty();
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
     $('#user_choice').append(user_choice);
     setTimeout(function(){ $('#game_message').empty();$('#justus_choice').empty();
-    $('#user_choice').empty(); }, 1500);
+    $('#user_choice').empty(); }, 2500);
   }else if(choice1 == 'paper' && choice2 == 'rock'){
     $('#game_message').empty();
     $('#game_message').append('You Win!');
-    user_score = parseInt($('#user_score').val()) + 1;
-    $('#user_score').val(user_score);
+    user_score = user_score + 1;
+    $('#user_score').empty();
+    $('#user_score').append();
     $('#justus_choice').empty();
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
     $('#user_choice').append(user_choice);
     setTimeout(function(){ $('#game_message').empty();$('#justus_choice').empty();
-    $('#user_choice').empty(); }, 1500);
+    $('#user_choice').empty(); }, 2500);
   }else if(choice1 == 'scissors' && choice2 == 'paper'){
     $('#game_message').empty();
     $('#game_message').append('You Win!');
-    user_score = parseInt($('#user_score').val()) + 1;
-    $('#user_score').val(user_score);
+    user_score = user_score + 1;
+    $('#user_score').empty();
+    $('#user_score').append();
     $('#justus_choice').empty();
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
     $('#user_choice').append(user_choice);
     setTimeout(function(){ $('#game_message').empty();$('#justus_choice').empty();
-    $('#user_choice').empty(); }, 1500);
+    $('#user_choice').empty(); }, 2500);
   }else if(choice1 == 'rock' && choice2 == 'scissors'){
     $('#game_message').empty();
     $('#game_message').append('You Win!');
-    user_score = parseInt($('#user_score').val()) + 1;
-    $('#user_score').val(user_score);
+    user_score = user_score + 1;
+    $('#user_score').empty();
+    $('#user_score').append();
     $('#justus_choice').empty();
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
     $('#user_choice').append(user_choice);
     setTimeout(function(){ $('#game_message').empty();$('#justus_choice').empty();
-    $('#user_choice').empty(); }, 1500);
+    $('#user_choice').empty(); }, 2500);
   }
 }
 
