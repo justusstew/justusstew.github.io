@@ -93,24 +93,29 @@ function evaluate_choices(choice1,choice2){
   }
 }
 
+// Returns a random number between min (inclusive) and max (exclusive)
+function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
 $('#rock').on('click',function(e){
   e.preventDefault();
   user_choice = 'rock';
-  justus_choice = options[Math.floor(Math.random() * 3) -1].toString();
+  justus_choice = options[getRandomArbitrary(0,3)].toString();
   $('#rock').removeClass('btn-active');
   evaluate_choices(user_choice,justus_choice);
 });
 $('#paper').on('click',function(e){
   e.preventDefault();
   user_choice = 'paper';
-  justus_choice = options[Math.floor(Math.random() * 3) -1].toString();
+  justus_choice = options[getRandomArbitrary(0,3)].toString();
   $('#paper').removeClass('btn-active');
   evaluate_choices(user_choice,justus_choice);
 });
 $('#scissors').on('click',function(e){
   e.preventDefault();
   user_choice = 'scissors';
-  justus_choice = options[Math.floor(Math.random() * 3) - 1].toString();
+  justus_choice = options[getRandomArbitrary(0,3)].toString();
   $('#scissors').removeClass('btn-active');
   evaluate_choices(user_choice,justus_choice);
 });
