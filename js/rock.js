@@ -96,21 +96,21 @@ function evaluate_choices(choice1,choice2){
 $('#rock').on('click',function(e){
   e.preventDefault();
   user_choice = 'rock';
-  justus_choice = options[Math.floor(Math.random() * 2) + 1].toString();
+  justus_choice = options[Math.floor(Math.random() * 2) + 0].toString();
   $('#rock').removeClass('btn-active');
   evaluate_choices(user_choice,justus_choice);
 });
 $('#paper').on('click',function(e){
   e.preventDefault();
   user_choice = 'paper';
-  justus_choice = options[Math.floor(Math.random() * 2) +1].toString();
+  justus_choice = options[Math.floor(Math.random() * 2) +0].toString();
   $('#paper').removeClass('btn-active');
   evaluate_choices(user_choice,justus_choice);
 });
 $('#scissors').on('click',function(e){
   e.preventDefault();
   user_choice = 'scissors';
-  justus_choice = options[Math.floor(Math.random() * 2) + 1].toString();
+  justus_choice = options[Math.floor(Math.random() * 2) + 0].toString();
   $('#scissors').removeClass('btn-active');
   evaluate_choices(user_choice,justus_choice);
 });
