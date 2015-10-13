@@ -15,7 +15,7 @@ function evaluate_choices(choice1,choice2){
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
     $('#user_choice').append(user_choice);
-    setTimeout(function(){ $('#game_message').empty();$('#justus_choice').empty();
+    setTimeout(function(){ $('#game_message').empty();$('#game_message').append('Who\'s gonna win...');$('#justus_choice').empty();
     $('#user_choice').empty(); }, 2500);
   }
   else if(choice1 == 'rock' && choice2 == 'paper'){
@@ -28,7 +28,7 @@ function evaluate_choices(choice1,choice2){
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
     $('#user_choice').append(user_choice);
-    setTimeout(function(){ $('#game_message').empty();$('#justus_choice').empty();
+    setTimeout(function(){ $('#game_message').empty();$('#game_message').append('Who\'s gonna win...');$('#justus_choice').empty();
     $('#user_choice').empty(); }, 2500);
   }else if(choice1 == 'paper' && choice2 == 'scissors'){
     $('#game_message').empty();
@@ -40,7 +40,7 @@ function evaluate_choices(choice1,choice2){
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
     $('#user_choice').append(user_choice);
-    setTimeout(function(){ $('#game_message').empty();$('#justus_choice').empty();
+    setTimeout(function(){ $('#game_message').empty();$('#game_message').append('Who\'s gonna win...');$('#justus_choice').empty();
     $('#user_choice').empty(); }, 2500);
   }else if(choice1 == 'scissors' && choice2 == 'rock'){
     $('#game_message').empty();
@@ -52,7 +52,7 @@ function evaluate_choices(choice1,choice2){
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
     $('#user_choice').append(user_choice);
-    setTimeout(function(){ $('#game_message').empty();$('#justus_choice').empty();
+    setTimeout(function(){ $('#game_message').empty();$('#game_message').append('Who\'s gonna win...');$('#justus_choice').empty();
     $('#user_choice').empty(); }, 2500);
   }else if(choice1 == 'paper' && choice2 == 'rock'){
     $('#game_message').empty();
@@ -64,7 +64,7 @@ function evaluate_choices(choice1,choice2){
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
     $('#user_choice').append(user_choice);
-    setTimeout(function(){ $('#game_message').empty();$('#justus_choice').empty();
+    setTimeout(function(){ $('#game_message').empty();$('#game_message').append('Who\'s gonna win...');$('#justus_choice').empty();
     $('#user_choice').empty(); }, 2500);
   }else if(choice1 == 'scissors' && choice2 == 'paper'){
     $('#game_message').empty();
@@ -76,7 +76,7 @@ function evaluate_choices(choice1,choice2){
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
     $('#user_choice').append(user_choice);
-    setTimeout(function(){ $('#game_message').empty();$('#justus_choice').empty();
+    setTimeout(function(){ $('#game_message').empty();$('#game_message').append('Who\'s gonna win...');$('#justus_choice').empty();
     $('#user_choice').empty(); }, 2500);
   }else if(choice1 == 'rock' && choice2 == 'scissors'){
     $('#game_message').empty();
@@ -88,7 +88,7 @@ function evaluate_choices(choice1,choice2){
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
     $('#user_choice').append(user_choice);
-    setTimeout(function(){ $('#game_message').empty();$('#justus_choice').empty();
+    setTimeout(function(){ $('#game_message').empty();$('#game_message').append('Who\'s gonna win...');$('#justus_choice').empty();
     $('#user_choice').empty(); }, 2500);
   }
 }
