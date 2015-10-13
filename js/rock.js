@@ -101,21 +101,21 @@ function getRandomArbitrary(min, max) {
 $('#rock').on('click',function(e){
   e.preventDefault();
   user_choice = 'rock';
-  justus_choice = options[getRandomArbitrary(0,2)].toString();
+  justus_choice = options[Math.round(Math.random()*2) + 1].toString();
   $('#rock').removeClass('btn-active');
   evaluate_choices(user_choice,justus_choice);
 });
 $('#paper').on('click',function(e){
   e.preventDefault();
   user_choice = 'paper';
-  justus_choice = options[getRandomArbitrary(0,2)].toString();
+  justus_choice = options[Math.round(Math.random()*2) + 1].toString();
   $('#paper').removeClass('btn-active');
   evaluate_choices(user_choice,justus_choice);
 });
 $('#scissors').on('click',function(e){
   e.preventDefault();
   user_choice = 'scissors';
-  justus_choice = options[getRandomArbitrary(0,2)].toString();
+    justus_choice = options[Math.round(Math.random()*2) + 1].toString();
   $('#scissors').removeClass('btn-active');
   evaluate_choices(user_choice,justus_choice);
 });
