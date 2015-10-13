@@ -50,18 +50,20 @@ $('#rock').on('click',function(e){
   e.preventDefault();
   user_choice = 'rock';
   justus_choice = options[Math.floor(Math.random() * 3) + 1].toString();
-
+  $('#rock').removeClass('active');
   evaluate_choices(user_choice,justus_choice);
 });
 $('#paper').on('click',function(e){
   e.preventDefault();
   user_choice = 'paper';
   justus_choice = options[Math.floor(Math.random() * 3) + 1].toString();
+  $('#paper').removeClass('active');
   evaluate_choices(user_choice,justus_choice);
 });
 $('#scissors').on('click',function(e){
   e.preventDefault();
   user_choice = 'scissors';
   justus_choice = options[Math.floor(Math.random() * 3) + 1].toString();
+  $('#scissors').removeClass('active');
   evaluate_choices(user_choice,justus_choice);
 });
