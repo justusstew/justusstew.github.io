@@ -9,16 +9,47 @@ $('#justus_score').append(justus_score.toString());
 
 function evaluate_choices(choice1,choice2){
   if(choice1 == choice2){
-    return 'Tie!';
+    $('#game_message').clear();
+    $('#game_message').append('Tie');
+    setTimeout(function(){ $('#game_message').clear(); }, 1500);
   }
   else if(choice1 == 'rock' && choice2 == 'paper'){
-    return 'Justus wins!';
+    $('#game_message').clear();
+    $('#game_message').append('Justus Wins!');
+    justus_score = parseInt($('#justus_score').val()) + 1;
+    setTimeout(function(){ $('#game_message').clear(); }, 1500);
+  }else if(choice1 == 'paper' && choice2 == 'scissors'){
+    $('#game_message').clear();
+    $('#game_message').append('Justus Wins!');
+    justus_score = parseInt($('#justus_score').val()) + 1;
+    setTimeout(function(){ $('#game_message').clear(); }, 1500);
+  }else if(choice1 == 'scissors' && choice2 == 'rock'){
+    $('#game_message').clear();
+    $('#game_message').append('Justus Wins!');
+    justus_score = parseInt($('#justus_score').val()) + 1;
+    setTimeout(function(){ $('#game_message').clear(); }, 1500);
+  }else if(choice1 == 'paper' && choice2 == 'rock'){
+    $('#game_message').clear();
+    $('#game_message').append('You Win!');
+    user_score = parseInt($('#user_score').val()) + 1;
+    setTimeout(function(){ $('#game_message').clear(); }, 1500);
+  }else if(choice1 == 'scissors' && choice2 == 'paper'){
+    $('#game_message').clear();
+    $('#game_message').append('You Win!');
+    user_score = parseInt($('#user_score').val()) + 1;
+    setTimeout(function(){ $('#game_message').clear(); }, 1500);
+  }else if(choice1 == 'rock' && choice2 == 'scissors'){
+    $('#game_message').clear();
+    $('#game_message').append('You Win!');
+    user_score = parseInt($('#user_score').val()) + 1;
+    setTimeout(function(){ $('#game_message').clear(); }, 1500);
   }
 }
 
 $('#rock').on('click',function(){
   user_choice = 'rock';
   justus_choice = options[Math.floor(Math.random() * 3) + 1].toString();
+
   evaluate_choices(user_choice,justus_choice);
 });
 $('#paper').on('click',function(){
