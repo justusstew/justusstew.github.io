@@ -23,7 +23,7 @@ function evaluate_choices(choice1,choice2){
     $('#game_message').append('Justus Wins!');
     justus_score = justus_score + 1;
     $('#justus_score').empty();
-    $('#justus_score').append();
+    $('#justus_score').append(justus_score);
     $('#justus_choice').empty();
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
@@ -35,7 +35,7 @@ function evaluate_choices(choice1,choice2){
     $('#game_message').append('Justus Wins!');
     justus_score = justus_score + 1;
     $('#justus_score').empty();
-    $('#justus_score').append();
+    $('#justus_score').append(justus_score);
     $('#justus_choice').empty();
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
@@ -47,7 +47,7 @@ function evaluate_choices(choice1,choice2){
     $('#game_message').append('Justus Wins!');
     justus_score = justus_score + 1;
     $('#justus_score').empty();
-    $('#justus_score').append();
+    $('#justus_score').append(justus_score);
     $('#justus_choice').empty();
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
@@ -59,7 +59,7 @@ function evaluate_choices(choice1,choice2){
     $('#game_message').append('You Win!');
     user_score = user_score + 1;
     $('#user_score').empty();
-    $('#user_score').append();
+    $('#user_score').append(user_score);
     $('#justus_choice').empty();
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
@@ -71,7 +71,7 @@ function evaluate_choices(choice1,choice2){
     $('#game_message').append('You Win!');
     user_score = user_score + 1;
     $('#user_score').empty();
-    $('#user_score').append();
+    $('#user_score').append(user_score);
     $('#justus_choice').empty();
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
@@ -83,7 +83,7 @@ function evaluate_choices(choice1,choice2){
     $('#game_message').append('You Win!');
     user_score = user_score + 1;
     $('#user_score').empty();
-    $('#user_score').append();
+    $('#user_score').append(user_score);
     $('#justus_choice').empty();
     $('#user_choice').empty();
     $('#justus_choice').append(justus_choice);
@@ -96,21 +96,21 @@ function evaluate_choices(choice1,choice2){
 $('#rock').on('click',function(e){
   e.preventDefault();
   user_choice = 'rock';
-  justus_choice = options[Math.floor(Math.random() * 3) + 1].toString();
+  justus_choice = options[Math.floor(Math.random() * 3) + 2].toString();
   $('#rock').removeClass('active');
   evaluate_choices(user_choice,justus_choice);
 });
 $('#paper').on('click',function(e){
   e.preventDefault();
   user_choice = 'paper';
-  justus_choice = options[Math.floor(Math.random() * 3) + 1].toString();
+  justus_choice = options[Math.floor(Math.random() * 3) + 2].toString();
   $('#paper').removeClass('active');
   evaluate_choices(user_choice,justus_choice);
 });
 $('#scissors').on('click',function(e){
   e.preventDefault();
   user_choice = 'scissors';
-  justus_choice = options[Math.floor(Math.random() * 3) + 1].toString();
+  justus_choice = options[Math.floor(Math.random() * 3) + 2].toString();
   $('#scissors').removeClass('active');
   evaluate_choices(user_choice,justus_choice);
 });
