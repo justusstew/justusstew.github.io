@@ -17,31 +17,37 @@ function evaluate_choices(choice1,choice2){
     $('#game_message').empty();
     $('#game_message').append('Justus Wins!');
     justus_score = parseInt($('#justus_score').val()) + 1;
+    $('#justus_score').val(justus_score);
     setTimeout(function(){ $('#game_message').empty(); }, 1500);
   }else if(choice1 == 'paper' && choice2 == 'scissors'){
     $('#game_message').empty();
     $('#game_message').append('Justus Wins!');
     justus_score = parseInt($('#justus_score').val()) + 1;
+    $('#justus_score').val(justus_score);
     setTimeout(function(){ $('#game_message').empty(); }, 1500);
   }else if(choice1 == 'scissors' && choice2 == 'rock'){
     $('#game_message').empty();
     $('#game_message').append('Justus Wins!');
     justus_score = parseInt($('#justus_score').val()) + 1;
+    $('#justus_score').val(justus_score);
     setTimeout(function(){ $('#game_message').empty(); }, 1500);
   }else if(choice1 == 'paper' && choice2 == 'rock'){
     $('#game_message').empty();
     $('#game_message').append('You Win!');
     user_score = parseInt($('#user_score').val()) + 1;
+    $('#user_score').val(user_score);
     setTimeout(function(){ $('#game_message').empty(); }, 1500);
   }else if(choice1 == 'scissors' && choice2 == 'paper'){
     $('#game_message').empty();
     $('#game_message').append('You Win!');
     user_score = parseInt($('#user_score').val()) + 1;
+    $('#user_score').val(user_score);
     setTimeout(function(){ $('#game_message').empty(); }, 1500);
   }else if(choice1 == 'rock' && choice2 == 'scissors'){
     $('#game_message').empty();
     $('#game_message').append('You Win!');
     user_score = parseInt($('#user_score').val()) + 1;
+    $('#user_score').val(user_score);
     setTimeout(function(){ $('#game_message').empty(); }, 1500);
   }
 }
